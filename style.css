@@ -1,0 +1,42 @@
+body {
+  background: eeeebb;
+}
+
+h1 {
+  font-size: 25pt;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50;
+}
+
+h2 {
+  font-size: 22pt;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40;
+}
+
+h3 {
+  font-size: 20pt;
+  text-align: center;
+  margin-top: 30;
+}
+
+.introduction {
+  font:size: 15pt;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduction::first-letter {
+  font-size: 20px;
+}
+
+.topitem {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
