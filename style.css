@@ -1,17 +1,16 @@
 body {
-  background: eeeebb;
+  background-color: fefcfa;
 }
 
 h1 {
-  font-size: 40pt;
+  font-size: calc(26px + 3.5vw);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50;
 }
 
 h2 {
-  font-size: 35pt;
+  font-size: calc(26px + 2.75vw);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -19,24 +18,115 @@ h2 {
 }
 
 h3 {
-  font-size: 30pt;
+  font-size: calc(22px + 1.5vw);
   text-align: center;
   margin-top: 30;
 }
 
+#externaldiv {
+  border-color: b0d0f0;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: calc(5px + 0.5vw + 0.5vh);
+  margin-left: calc(5px + 1vw);
+  margin-right: calc(5px + 1vw);
+  margin-top: calc(5px + 1vh);
+  margin-bottom: calc(5px + 1vh);
+}
+
+#containerdiv {
+  border-color: b0d0f0;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: calc(3px + 0.3vw + 0.3vh);
+  padding-left: calc(5px + 3vw);
+  padding-right: calc(5px + 3vw);
+  padding-top: calc(5px + 3vh);
+  padding-bottom: calc(5px + 3vh);
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 .introduction {
-  font:size: 15pt;
+  font-size: calc(13px + 0.8vw);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.introduction::first-letter {
-  font-size: 30px;
 }
 
 .topitem {
+  font-size: calc(13px + 0.8vw);
   text-align: center;
+  margin-left: calc(10px + 5vw);
+  margin-right: calc(10px + 5vw);
+}
+
+.topitem ul {
+  font-size: calc(13px + 0.8vw);
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
+}
+
+.collapsiblecontainer {
+  border-radius: 2vw;
+  background-color: #f0d0b0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.collapsible {
+  border-radius: 2vw;
+  background-color: #b0d0f0;
+  cursor: pointer;
+  padding-left: calc(5px + 1vw);
+  padding-right: calc(5px + 1vw);
+  padding-top: calc(5px + 1vh);
+  padding-bottom: calc(5px + 1vh);
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.active {
+  background-color: f0d0b0;
+  border-radius: 2vw 2vw 0 0;
+}
+
+.collapsible:hover {
+  background-color: f0d0b0;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 100%;
+  border-radius: 0 0 2vw 2vw;
+  background-color: f0d0b0;
+}
+
+.content img {
+  width: 90%;
+  border-radius: calc(10px + 1vh);
+  padding-top: calc(10px + 1vh);
+  padding-bottom: calc(10px + 1vh);
+  overflow: trim;
+}
+
+.content script {
+  width: 90%;
+  height: 100%;
+}
+.curvy {
+  background-color: f0d0b0;
+  border-radius: 2vw;
+  box-shadow: 0px 0.5vh 1vh 00000000 inset;
+  padding-top: calc(10px + 1vh);
+  padding-bottom: calc(10px + 1vh);
 }
